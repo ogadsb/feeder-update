@@ -4,7 +4,7 @@ After=network.target
 After=adsbfi-first-run.service
 
 [Service]
-EnvironmentFile=/boot/adsbfi.env
+EnvironmentFile=/boot/adsbfi-978env
 SyslogIdentifier=adsbfi-978
 RuntimeDirectory=adsbfi-978
 User=adsbexchange
