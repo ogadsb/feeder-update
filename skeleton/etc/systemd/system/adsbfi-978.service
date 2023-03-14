@@ -1,15 +1,15 @@
 [Unit]
 Wants=network.target
 After=network.target
-After=adsbexchange-first-run.service
+After=adsbfi-first-run.service
 
 [Service]
-EnvironmentFile=/boot/adsbx-978env
-SyslogIdentifier=adsbexchange-978
-RuntimeDirectory=adsbexchange-978
+EnvironmentFile=/boot/adsbfi.env
+SyslogIdentifier=adsbfi-978
+RuntimeDirectory=adsbfi-978
 User=adsbexchange
 RuntimeDirectoryMode=0755
-ExecStart=/usr/bin/adsbx-978-start
+ExecStart=/usr/bin/adsbfi-978-start
 Type=simple
 Restart=on-failure
 RestartSec=30
