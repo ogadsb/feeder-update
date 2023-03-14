@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -e 's$^$https://adsb.fi/api/feeders/?feed=$' /boot/adsbfi-uuid
